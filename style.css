@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Basic CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.html{
+    height: 100%;
+}
+
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #709fb0;
+}
+
+h4,h5,h6,p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.judul{
+    font-size: 24px;
+}
+
+.tahun{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+table{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    border: none;
+}
+
+.tahun img{
+    display: inline-block;
+    width: 315px;
+    margin: 50px;
+}
+
+td{
+    padding-right: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    background-color: #d9ecf2;
+}
+
+td:hover{
+    cursor: pointer;
+    color: #3588a7;
+}
+
+/* Custom CSS */
+
+.tengah{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.halaman{
+    width: 100%;
+}
+
+.wrapper{
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.foto-profile{
+    width: 15%;
+    border-radius: 100%;
+}
+
+
+.container {
+    width: 80%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-cover{
+    background-color: #726a95;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: block;
+    background-image: url(img/9.jpg);
+    opacity: 0.8;
+    background-size: cover;
+}
+
+.top-cover h1,h2{
+    color: white;
+}
+
+.top-jumbotron{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: black;
+    display: inline-block;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.top-jumbotron img,h1,h2{
+    z-index: 1;
+}
+
+.top-jumbotron img:hover{
+    transform: scale(1.1);
+}
+
+.intro{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.intro h3,p{
+    text-align: left;
+}
+
+.intro img{
+    width: 15%;
+    float: left;
+    margin-right: 30px;
+}
+
+.intro img:hover{
+    transform: rotateZ(-30deg);
+}
+
+.intro h4{
+    font-size: 16px;
+    color: #709fb0;
+}
+
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galeri{
+    flex: 1 0 calc(25% - 1em);
+}
+
+.galeri img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.galeri img:hover{
+    filter: contrast(125%);
+}
+
+footer{
+    background-color: #709fb0;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.quote h3,p{
+    text-align: center;
+}
+
+/*Rensponsive*/
+
+@media only screen and (max-device-width: 1366px) {
+    .top-cover {
+      background-attachment: scroll;
+    }
+}
+
+@media (max-width:820px){
+    .tahun img{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 700px){
+
+    .top-jumbotron{
+        text-align: left;
+    }
+
+    .foto-profile{
+        width: 40%;
+    }
+
+    .tahun img{
+        display: block;
+    }
+
+    .intro{
+        display: block;
+    }
+
+    .intro img{
+        width: 200px;
+        flex-direction: column;
+        align-self: center;
+        margin-bottom: 20px;
+        clear: left;
+    }
+
+    .intro h3{
+        text-align: center;
+    }
+
+    .intro h4{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    td{
+        display: block;
+    }
+}
